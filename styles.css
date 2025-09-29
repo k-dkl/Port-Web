@@ -77,7 +77,6 @@
 .contact-info li a {
     color: var(--white);
     text-decoration: none;
-    
 }
 
 .contact-info li:last-child {
@@ -112,4 +111,5 @@
     display: inline;
   }
 }
+
 
