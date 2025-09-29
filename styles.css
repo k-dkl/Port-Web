@@ -33,7 +33,9 @@
 
 #mainDiv {
     border-right: 0.1vw solid var(--white);
-    padding: 3vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    max-width: 70vw;
 }
 
 .subtitle {
@@ -41,7 +43,6 @@
     font-family: Montserrat, sans-serif;
     font-weight: 300;
     margin: 0;
-    max-width: 60vw;
     padding-right: 2vw;
     font-size: 2.5vw;
 }
@@ -53,12 +54,12 @@
     font-size: 1.5vw;
 }
 
-.cottact-info {
+.contact-info {
     align-content: center;
 }
 
 .contact-info ul {
-    padding-left: 5vw
+    list-style-type: none;
 }
 .contact-info li {
     color: var(--white);
@@ -69,11 +70,20 @@
     margin-bottom: 2vw;;
 }
 
+.contact-info li i {
+  padding: 0.5vw
+}
+
+.contact-info li a {
+    color: var(--white);
+    text-decoration: none;
+}
+
 .contact-info li:last-child {
     margin-bottom: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-aspect-ratio: 4/3) {
   .hero-section {
     flex-direction: column;
     align-items: flex-start;
@@ -93,5 +103,11 @@
 
   .contact-info ul {
     padding-left: 3vw;
+    display: flex;
+    gap: 3vw
+  }
+
+  .contact-info li {
+    display: inline;
   }
 }
