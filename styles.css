@@ -14,7 +14,7 @@
 
 .hero-div {
     background-color: var(--royal-blue);
-    padding: 3vw;
+    padding: 2.5vw;
 }
 
 .hero-section {
@@ -113,6 +113,7 @@
     display: inline;
   }
 }
+
 
 
 
