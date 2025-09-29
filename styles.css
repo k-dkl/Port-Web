@@ -96,6 +96,7 @@
     border-bottom: 0.1vw solid var(--white);
     width: 100%;
     padding-bottom: 3vw;
+    max-width: 100vw;
   }
 
   .subtitle {
@@ -112,6 +113,7 @@
     display: inline;
   }
 }
+
 
 
 
