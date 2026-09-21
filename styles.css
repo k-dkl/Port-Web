@@ -399,3 +399,66 @@ html {
         display: none; /* Can be swapped for a mobile hamburger menu */
     }
 }
+
+/* Active Nav Indicator */
+.nav-links a.active {
+    color: var(--orange);
+    font-weight: 600;
+}
+
+.nav-links a.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--orange);
+    margin-top: 4px;
+    border-radius: 2px;
+}
+
+/* Fix navbar layout to accommodate the new pseudo-element (underline) */
+.nav-links a {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer Styles */
+.footer {
+    border-top: 1px solid rgba(220, 223, 228, 0.1);
+    background-color: rgba(16, 19, 24, 0.95);
+    padding: 2.5rem 0;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-container p {
+    color: var(--lighter-blue);
+    font-family: Montserrat, sans-serif;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    color: var(--lighter-blue);
+    font-size: 1.25rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--orange);
+    transform: translateY(-2px);
+}
