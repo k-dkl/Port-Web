@@ -462,3 +462,127 @@ html {
     color: var(--orange);
     transform: translateY(-2px);
 }
+
+/* --- Project Detail Page Styles --- */
+
+.project-detail-page {
+    max-width: 900px; /* Narrower width for readable text lines */
+    padding-top: 3rem;
+}
+
+.back-link {
+    color: var(--lighter-blue);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    transition: color 0.2s ease;
+}
+
+.back-link:hover {
+    color: var(--orange);
+}
+
+.project-hero {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.project-title {
+    font-family: Oswald, sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: var(--white);
+    margin: 0 0 1rem 0;
+    line-height: 1.1;
+}
+
+.detail-tags {
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.project-hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 1rem;
+    border: 1px solid rgba(220, 223, 228, 0.2);
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.content-section h2 {
+    font-family: Oswald, sans-serif;
+    font-size: 2rem;
+    color: var(--lighter-blue);
+    margin: 0 0 1rem 0;
+    border-bottom: 1px solid rgba(220, 223, 228, 0.1);
+    padding-bottom: 0.5rem;
+}
+
+.content-section p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--white);
+    margin: 0;
+}
+
+.content-section strong {
+    color: var(--orange);
+}
+
+/* Image Gallery Grid */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(220, 223, 228, 0.15);
+}
+
+/* Highlighted Results Box */
+.result-box {
+    background-color: var(--darker-blue);
+    padding: 2rem;
+    border-radius: 0.75rem;
+    border-left: 4px solid var(--green);
+}
+
+.result-box h2 {
+    border-bottom: none;
+    color: var(--white);
+}
+
+.result-box ul {
+    margin: 0;
+    padding-left: 1.5rem;
+    color: var(--white);
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* Mobile Adjustments for Project Page */
+@media (max-width: 768px) {
+    .image-gallery {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-hero-image {
+        max-height: 300px;
+    }
+}

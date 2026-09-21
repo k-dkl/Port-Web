@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RC Buggy | Krishna Dhakal</title>
+
+    <!-- Google Fonts & Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Stylesheet (pointing up one directory level) -->
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="body">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html#home" class="nav-logo">KD</a>
+            <ul class="nav-links">
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#experience">Experience</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Detail Container -->
+    <main class="page-container project-detail-page">
+        
+        <a href="../index.html#projects" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Projects</a>
+
+        <!-- Project Hero -->
+        <header class="project-hero">
+            <h1 class="project-title">RC Buggy Chassis & Bodywork</h1>
+            <div class="project-tags detail-tags">
+                <span class="tag orange-bg">SOLIDWORKS</span>
+                <span class="tag red-bg">Machining</span>
+                <span class="tag purple-bg">EdgeCAM</span>
+            </div>
+            
+            <img src="other-assets/placeholder-image.webp" alt="Finished RC Buggy" class="project-hero-image">
+        </header>
+
+        <!-- Project Content -->
+        <article class="project-content">
+            
+            <section class="content-section">
+                <h2>Project Overview</h2>
+                <p>The objective of this project was to manufacture, assemble, and optimize a remote-controlled buggy to compete in the university engineering trials. The project required translating 2D engineering drawings into a physical prototype using manual workshop machining, followed by a digital redesign phase to improve track performance.</p>
+            </section>
+
+            <section class="content-section">
+                <h2>Manufacturing & Assembly</h2>
+                <p>The initial chassis was constructed using manual milling and turning techniques. Tolerances had to be strictly maintained to ensure the suspension and drivetrain aligned correctly. After the mechanical assembly, custom vacuum-formed bodywork was designed to protect the internal electronics.</p>
+                
+                <div class="image-gallery">
+                    <img src="other-assets/placeholder-image.webp" alt="Milling the chassis">
+                    <img src="other-assets/placeholder-image.webp" alt="Suspension assembly">
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Redesign & Optimization</h2>
+                <p>Following the initial track tests, the buggy was found to be overweight, causing sluggish acceleration. The chassis was modeled in <strong>SOLIDWORKS</strong>, where pocketing strategies were applied to reduce mass without compromising structural integrity. <strong>EdgeCAM</strong> was then utilized to generate CNC toolpaths for automated, high-precision manufacturing of the new chassis plate.</p>
+            </section>
+
+            <section class="content-section result-box">
+                <h2>Key Results</h2>
+                <ul>
+                    <li>Reduced overall chassis weight by 15% through CAD optimization.</li>
+                    <li>Achieved a top-3 finish in the university lap-time trials.</li>
+                    <li>Successfully generated error-free G-code for CNC manufacturing.</li>
+                </ul>
+            </section>
+
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Krishna Dhakal. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/k-dkl"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/krishna-dhakal-579133331/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
