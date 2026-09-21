@@ -1,167 +1,235 @@
 <!DOCTYPE html>
-<html lang = 'en' class = 'scroll-smooth'>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset = 'UTF-8'>
-    <meta http-equiv = 'X-UA-Compatible' content = 'IE=edge'>
-    <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel = 'stylesheet' href = 'styles.css'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Dhakal | Aero-Mechanical Engineering</title>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png">
-
-    <title>Krishna Dhakal</title>
 </head>
 
-<body class = 'body'>
-    <div class = hero-div>
-        <header class = 'hero-section'>
-            <div id = 'mainDiv'>
-                <h1 class = 'title'> Krishna Dhakal </h1>
-                <p class = 'subtitle'> Second-year BEng (Hons.) Aero-Mechanical Engineering student</p>
-                <p class = 'body-text'> A summary of myself goes here. Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            </div>
+<body class="body">
 
-            <div class = 'contact-info'>
-                <ul>
-                    <li><i class="fa-solid fa-building-columns fa-lg"></i> University of Strathclyde </li>
-                    <li><i class="fa-solid fa-location-dot fa-lg"></i> Glasgow, Scotland </li>
-                    <li><i class="fa-solid fa-envelope fa-lg" ></i><a href="mailto:krishna@dhakal.co.uk"> <u class="thin-underline">krishna@dhakal.co.uk</u>  <i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></li>
-                    <li><i class="fa-brands fa-linkedin fa-lg" ></i><a href = 'https://www.linkedin.com/in/krishna-dhakal-579133331/'> <u class="thin-underline">LinkedIn</u>  <i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></li>
-                    <li><i class="fa-brands fa-github fa-lg" ></i><a href = 'https://github.com/k-dkl'> <u class="thin-underline">GitHub</u>  <i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></li>
-                    <li><i class="fa-solid fa-file"></i><a href = '/assets/krishna_dhakal.pdf'> <u class="thin-underline">CV</u>  <i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></li>
-                </ul>
-            </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">KD</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Work Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#awards">Awards</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        </header>
-    </div>
+    <!-- Main Container -->
+    <main class="page-container" id="home">
 
-    <h1 id="Projects" class="title"> Projects </h1>
-
-    <!-- RC Buggy -->
-    <div class = 'projects-grid'>
-
-        <a href="/projects/project-a.html" class="project-box">
-
-            <div class = "project-header" >
-
-                <image src="projects/other-assets/placeholder-image.webp"
-                alt="Project A Image" 
-                class="project-image"/>
-
-                <div class = project-title-tags>
-                    <h3>RC Buggy</h3> 
-                    <div class = project-tags>
-                        <span class="tag orange-bg">SOLIDWORKS</span>
-                        <span class="tag red-bg">Machining</span>
-                        <span class="tag purple-bg">EdgeCAM</span>
-                    </div>
+        <!-- Hero Section -->
+        <section class="hero-div" id="about">
+            <header class="hero-section">
+                <div id="mainDiv">
+                    <h1 class="title">Krishna Dhakal</h1>
+                    <p class="subtitle">3rd-year BEng (Hons.) Aero-Mechanical Engineering student</p>
+                    <p class="body-text">
+                        Aero-Mechanical engineering student passionate about mechanical design, rapid prototyping, and CAD/CAM workflows. Experienced in manufacturing, machining, and engineering problem-solving through hands-on university projects and student competitions.
+                    </p>
                 </div>
 
-            </div>
-
-            <p> &hybull; Built a chassis for a remote-controlled buggy from parts machined in the university workshop using provided dimensions. </p>
-            <p> &hybull; Designed and assembled bodywork for the buggy and raced it against other teams' buggies in a competition. </p>
-            <p> &hybull; Afterwards, the chassis and bodywork were redesigned in SOLIDWORKS to improve performance based on observations, and a toolpath for machining
-                the chassis was created using EdgeCAM.
-            </p>
-
-            <span class = "read-more">Learn More &rarr;</span>    
-        </a>
-
-    <!-- Project B -->
-
-        <a href="/projects/project-a.html" class="project-box">
-
-            <div class = "project-header" >
-
-                <image src="projects/other-assets/placeholder-image.webp"
-                alt="Project B Image" 
-                class="project-image"/>
-
-                <div class = project-title-tags>
-                    <h3>Project B Title</h3> 
-                    <div class = project-tags>
-                        <span class="tag green-bg">Skill 1</span>
-                        <span class="tag red-bg">Skill 2</span>
-                        <span class="tag purple-bg">Skill 3</span>
-                    </div>
+                <div class="contact-info">
+                    <ul>
+                        <li><i class="fa-solid fa-building-columns fa-lg"></i> University of Strathclyde</li>
+                        <li><i class="fa-solid fa-location-dot fa-lg"></i> Glasgow, Scotland</li>
+                        <li><i class="fa-solid fa-envelope fa-lg"></i><a href="mailto:krishna@dhakal.co.uk" class="contact-link">krishna@dhakal.co.uk <i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></li>
+                        <li><i class="fa-brands fa-linkedin fa-lg"></i><a href="https://www.linkedin.com/in/krishna-dhakal-579133331/" class="contact-link">LinkedIn <i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></li>
+                        <li><i class="fa-brands fa-github fa-lg"></i><a href="https://github.com/k-dkl" class="contact-link">GitHub <i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></li>
+                        <li><i class="fa-solid fa-file"></i><a href="/assets/krishna_dhakal.pdf" class="contact-link">CV <i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i></a></li>
+                    </ul>
                 </div>
+            </header>
+        </section>
 
-            </div>
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2 class="section-title">Projects</h2>
 
-            <p> &hybull; Bullet point 1 </p>
-            <p> &hybull; Bullet point 2 </p>
-            <p> &hybull; Bullet point 3 </p>
-
-            <span class = "read-more">Learn More &rarr;</span>    
-        </a>
-
-    <!-- Project C -->
-        <a href="/projects/project-a.html" class="project-box">
-
-            <div class = "project-header" >
-
-                <image src="projects/other-assets/placeholder-image.webp"
-                alt="Project C Image" 
-                class="project-image"/>
-
-                <div class = project-title-tags>
-                    <h3>Project C Title</h3> 
-                    <div class = project-tags>
-                        <span class="tag orange-bg">Skill 1</span>
-                        <span class="tag green-bg">Skill 2</span>
-                        <span class="tag purple-bg">Skill 3</span>
+            <div class="projects-grid">
+                <!-- RC Buggy -->
+                <a href="/projects/project-a.html" class="project-box">
+                    <div class="project-header">
+                        <img src="projects/other-assets/placeholder-image.webp" alt="RC Buggy Image" class="project-image">
+                        <div class="project-title-tags">
+                            <h3>RC Buggy</h3>
+                            <div class="project-tags">
+                                <span class="tag orange-bg">SOLIDWORKS</span>
+                                <span class="tag red-bg">Machining</span>
+                                <span class="tag purple-bg">EdgeCAM</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    <ul class="project-list">
+                        <li>Built a chassis for a remote-controlled buggy from parts machined in the university workshop using provided engineering drawings.</li>
+                        <li>Designed and assembled bodywork for the buggy and raced it against competing university teams.</li>
+                        <li>Iteratively redesigned the chassis and bodywork in SOLIDWORKS based on field testing, generating full toolpaths in EdgeCAM.</li>
+                    </ul>
+                    <span class="read-more">Learn More &rarr;</span>
+                </a>
 
-            </div>
-
-            <p> &hybull; Bullet point 1 </p>
-            <p> &hybull; Bullet point 2 </p>
-            <p> &hybull; Bullet point 3 </p>
-
-            <span class = "read-more">Learn More &rarr;</span>    
-        </a>
-
-    <!-- Project D -->
-        <a href="/projects/project-a.html" class="project-box">
-
-            <div class = "project-header" >
-
-                <image src="projects/other-assets/placeholder-image.webp" 
-                alt="Project D Image" 
-                class="project-image"/>
-
-                <div class = project-title-tags>
-                    <h3>Project D Title</h3> 
-                    <div class = project-tags>
-                        <span class="tag red-bg">Skill 1</span>
-                        <span class="tag orange-bg">Skill 2</span>
-                        <span class="tag green-bg">Skill 3</span>
+                <!-- Project B -->
+                <a href="/projects/project-a.html" class="project-box">
+                    <div class="project-header">
+                        <img src="projects/other-assets/placeholder-image.webp" alt="Aerodynamic Wing Analysis" class="project-image">
+                        <div class="project-title-tags">
+                            <h3>Wing Aerodynamics Analysis</h3>
+                            <div class="project-tags">
+                                <span class="tag green-bg">ANSYS Fluent</span>
+                                <span class="tag red-bg">CFD</span>
+                                <span class="tag purple-bg">MATLAB</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    <ul class="project-list">
+                        <li>Modeled 2D and 3D aerofoil geometry to analyze lift and drag coefficients across various angles of attack.</li>
+                        <li>Correlated computational fluid dynamics results against wind tunnel experimental data.</li>
+                        <li>Post-processed and visualized flow fields, stall behavior, and pressure distributions using MATLAB.</li>
+                    </ul>
+                    <span class="read-more">Learn More &rarr;</span>
+                </a>
 
+                <!-- Project C -->
+                <a href="/projects/project-a.html" class="project-box">
+                    <div class="project-header">
+                        <img src="projects/other-assets/placeholder-image.webp" alt="Structural FEA Bracket" class="project-image">
+                        <div class="project-title-tags">
+                            <h3>Structural Bracket Optimization</h3>
+                            <div class="project-tags">
+                                <span class="tag orange-bg">FEA</span>
+                                <span class="tag green-bg">Topology Opt</span>
+                                <span class="tag purple-bg">SOLIDWORKS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="project-list">
+                        <li>Conducted static structural analysis on aerospace mounting brackets subjected to complex multiaxial load cases.</li>
+                        <li>Executed topology optimization to reduce component mass by 28% while maintaining safety margins.</li>
+                        <li>Prepared parametric CAD models for additive manufacturing and validation testing.</li>
+                    </ul>
+                    <span class="read-more">Learn More &rarr;</span>
+                </a>
+
+                <!-- Project D -->
+                <a href="/projects/project-a.html" class="project-box">
+                    <div class="project-header">
+                        <img src="projects/other-assets/placeholder-image.webp" alt="Autonomous Flight Controller" class="project-image">
+                        <div class="project-title-tags">
+                            <h3>UAV Telemetry & Control</h3>
+                            <div class="project-tags">
+                                <span class="tag red-bg">C++</span>
+                                <span class="tag orange-bg">Avionics</span>
+                                <span class="tag green-bg">Sensors</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="project-list">
+                        <li>Integrated an IMU and barometer sensor array on a micro-controller for real-time altitude and attitude estimation.</li>
+                        <li>Wrote sensor-filtering algorithms to eliminate high-frequency motor vibration noise.</li>
+                        <li>Logged wireless flight telemetry to analyze controller stability and battery discharge rates.</li>
+                    </ul>
+                    <span class="read-more">Learn More &rarr;</span>
+                </a>
             </div>
+        </section>
 
-            <p> &hybull; Bullet point 1 </p>
-            <p> &hybull; Bullet point 2 </p>
-            <p> &hybull; Bullet point 3 </p>
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="card-grid">
+                <div class="info-card">
+                    <h3>CAD & Simulation</h3>
+                    <p>SOLIDWORKS, EdgeCAM, ANSYS Fluent (CFD), FEA Stress Analysis, AutoCAD</p>
+                </div>
+                <div class="info-card">
+                    <h3>Machining & Prototyping</h3>
+                    <p>Manual Lathe & Milling, CNC G-code, 3D Printing (FDM/SLA), Workshop Tooling, Soldering</p>
+                </div>
+                <div class="info-card">
+                    <h3>Programming & Software</h3>
+                    <p>MATLAB, Python, C/C++, Git/GitHub, HTML/CSS, MS Excel (VBA/Data Analysis)</p>
+                </div>
+            </div>
+        </section>
 
-            <span class = "read-more">Learn More &rarr;</span>    
-        </a>
+        <!-- Work Experience Section -->
+        <section id="experience" class="section">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>Engineering Intern / Workshop Assistant</h3>
+                        <span class="timeline-meta">Company Name &bull; Summer 2025</span>
+                    </div>
+                    <ul class="timeline-list">
+                        <li>Assisted senior mechanical engineers in preparing technical drawings and verifying tolerances according to ISO standards.</li>
+                        <li>Participated in quality control inspections, verifying machined components against CAD specifications with calipers and micrometers.</li>
+                        <li>Contributed to rapid prototyping cycles by operating workshop machinery and 3D printing test brackets.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>BEng (Hons.) Aero-Mechanical Engineering</h3>
+                        <span class="timeline-meta">University of Strathclyde &bull; 2023 &ndash; Present (Expected 2027)</span>
+                    </div>
+                    <ul class="timeline-list">
+                        <li><strong>Relevant Coursework:</strong> Aerodynamics, Flight Mechanics, Structural Mechanics, Thermodynamics & Fluid Power, Engineering Design & Prototyping.</li>
+                        <li><strong>Activities:</strong> Formula Student / Aerospace Society member.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    </div>
+        <!-- Awards Section -->
+        <section id="awards" class="section">
+            <h2 class="section-title">Awards & Honors</h2>
+            <div class="card-grid">
+                <div class="info-card">
+                    <h3>University Design Competition</h3>
+                    <span class="timeline-meta">Top 3 Finish &bull; 2024</span>
+                    <p>Awarded for buggy chassis redesign, manufacturing precision, and lap efficiency in university trials.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Academic Excellence / Dean's List</h3>
+                    <span class="timeline-meta">Department of Mechanical & Aerospace Engineering &bull; 2024</span>
+                    <p>Recognized for outstanding academic achievement across Year 1 and Year 2 core engineering modules.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
 </body>
 </html>
