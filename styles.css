@@ -33,6 +33,10 @@ body.body {
     scroll-behavior: smooth;
 }
 
+html {
+    background-color: var(--black); 
+}
+
 /* Navigation Bar */
 .navbar {
     position: sticky;
